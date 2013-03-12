@@ -96,7 +96,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 				var settings = $.extend({
 					// Required Settings
 					id       : $this.attr('id'), // The ID of the DOM object
-					swf      : '<%= asset_path("uploadify/uploadify.swf") %>',  // The path to the uploadify SWF file
+					swf      : '<%= asset_path("uploadify/uploadify.swf", :digest => false) %>',  // The path to the uploadify SWF file
 					uploader : 'uploadify.php',  // The path to the server-side upload script
 
 					// Options
